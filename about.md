@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hello, I'm Emma Grace Steimann.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Over the past 6 years I’ve worked with small startups to Fortune 500 companies, delivering web and mobile apps to millions of active users. I’ve lead a mobile applications team and worked in everything from DevOps, graphics, web and native mobile development in my career. My passion for creating beautiful stable web and mobile applications, has afforded me an extremely holistic view of software development.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[emma@rainydayinteractive.net](mailto:emma@rainydayinteractive.net)
