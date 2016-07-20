@@ -1,0 +1,36 @@
+# The Headache of Game and Graphics Programming:
+
+Game programming isn't easy. I've been learning various game programming options over the past several years. Every single option is limited in its own way. Ultimately that means more work for you, the game creator, whether is be wanting to render 3D models, handle sprite sheets, or simply which platforms do you want to play your game on.
+
+I've recently had an unusual amount of time on my hands and so I began evaluating my needs against time of development. 
+
+Originally I had approached game creation with a list of goals in mind:
+
+1. Learn how to become a brilliant graphics programmer capable of making things like [Pixar's Renderman](https://en.wikipedia.org/wiki/RenderMan_\(software\)) and [3D Studio Max](https://en.wikipedia.org/wiki/Autodesk_3ds_Max)
+2. Make some of the AMAZING game ideas I've had.
+3. Completely pivot my career from iOS/Ruby Engineer to Game/Graphics Programmer. 
+
+Modest goals to be sure. 
+
+A year and a half ago, I began by learning OpenGL ES. After being overwhelmed by things like vertex and fragment shaders, 3D and matrix math, buffers, stride, culling, uniforms, world/model/view/camera space, projection vs orthographic cameras, and countless other things, I found myself on a deep dive I could barely keep up with. 
+
+On top of that, I started to realize OpenGL ES reduces my options. 
+
+OpenGL ES is great for mobile and can translate nicely to WebGL, but if I write Objective-C or Swift, I'm locked into iOS. I could write C++ or C for the graphics code and write an Objective-C wrapper. That also means I shouldn't use Apple's GLKit, otherwise, I'd also have to port all the math and base effect code. And oh, Apple just came out with Metal. Those pre-computed shaders sure seems nice and [Vainglory](https://en.wikipedia.org/wiki/Vainglory_\(video_game\)) is such a pretty game!
+
+But again Metal locks me into iOS as well. There's always [Vulkan/Mantle](https://en.wikipedia.org/wiki/Vulkan_\(API\)), that's cross platform but not fully supported. There's also the non-ES version of OpenGL - OpenGL 4.x. Geometry Shaders seem amazing. Although 4.x locks you into newer GPUs and OSs with appropriate drivers. There's also [Direct3D](https://en.wikipedia.org/wiki/Direct3D), but that locks you into Xbox and Windows. With Mantle or OpenGL or Direct3D or Metal, they all have their own shader languages as well. Another headache. 
+
+After nearly dying from information overload, I re-grouped. If I had to choose a goal to focus on, which one should I choose? I've never used Renderman, I seldom use 3D modeling software enough to say I know how to make my own. I'd like to pivot my career, but I need some game/graphics portfolio behind me to do that. 
+
+So let's just make a game. With all the options I realized picking a platform would greatly help me, so since I'm already an iOS developer, let's do iOS. On top of that, I decided to skip the low-level graphics programming and choose a framework/engine instead. 
+
+Well in the framework/engine arena the options abound. For 2D there's Cocos2d-x, Cocos2d-ObjC, SpriteKit, GameMaker Studio, Unity and many others. For 3D there's Cocos3D, SceneKit, Unreal, Unity and many others as well. There's also things like C# and MonoGame which is what Unity uses under the hood. 
+
+For awhile I started learning, SpriteKit, it was a good primer and really opened my eyes to a lot of concepts I was learning while digging into OpenGLES. 
+Things like cameras, and vectors, and scene graphs all made more sense. I finally realized their benefits of not starting so low level. 
+
+When using an engine you learn important concepts in an easy to understand way. If you have to learn things like scene graphs and sprites in addition to learning complex graphics concepts like vertex buffer objects and Blinn–Phong reflection model it makes everything way more difficult.
+
+With that realization, I decided to start higher level. As of a couple weeks ago, I've been learning Unity and I've been loving it! It's multi-platform and the best part is graphics concepts I was struggling with are finally much easier to wrap my head around.  
+
+My conclusion from all this is, when first approaching graphics and game programming, don't jump into the deep end right away. Learn from a framework or an engine. 
